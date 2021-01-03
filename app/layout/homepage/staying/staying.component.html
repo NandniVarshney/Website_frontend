@@ -1,0 +1,36 @@
+<section class="loraBody">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <div id="container">
+    <div class="video">
+      <iframe id="homeVideo" width="800" height="500"
+        src="https://player.vimeo.com/video/368342566?autoplay=1&amp;dnt=1&app_id=122963">
+      </iframe>
+
+    </div>
+  </div>
+  <div class="backImg" id="body">
+    <div (click)="closeVideo()" class="arrow-down"></div>
+    <img class="smartImg" src="https://senraco.com/wp-content/uploads/2019/12/smart-city-scaled.png"
+      (click)="closeVideo()">
+    <div class="content">
+      <div (click)="closeVideo()">
+        <p class="heading">Fastest Growing LoRaWAN<br> Network in India</p>
+        <p class="subcontent">We are a PAN India LoRaWAN Network operator and provide managed network<br>
+          services for Internet of Things (IoT) and Machine-to-machine (M2M) applications<br> and solutions.</p>
+        <button class="startButton">Start Now <span class="tooltiptext"><i
+              class="fa fa-arrow-right"></i></span></button>
+      </div>
+      <div>
+        <button class="videoButton" (click)="playVideo()"><i class="fa fa-play"></i></button>
+      </div>
+
+      <div class="scrolling" (click)="closeVideo()">
+        <p class="scrollText"><span class="scrolll"><button class="scroll">.</button></span>SCROLL DOWN </p>
+
+      </div>
+      <div (click)="closeVideo()" style="display: flex; justify-content: flex-end">
+        <div class="arrow-left"></div>
+      </div>
+    </div>
+  </div>
+</section>

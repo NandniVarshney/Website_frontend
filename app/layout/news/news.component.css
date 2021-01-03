@@ -1,0 +1,175 @@
+#news-section{
+    overflow: hidden;
+    padding-left: 0;
+}
+#news-section #header{
+    flex-wrap: wrap;
+    overflow: auto;
+}
+#news-section #header nav a{
+    flex-wrap: wrap;
+    color: white;
+    margin-top: 20px;
+    font-size: 14px;
+}
+#news-section #about-us{
+    margin: 20px 20px;
+    font-size: 14px;
+}
+#heading{
+    font-size: 150px;
+    color: white;
+}
+#upper{
+    background-image:url("https://ginjerv2.s3.ap-south-1.amazonaws.com/eve.jpg")  ; 
+    padding : 0px;
+    height: 70vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+}
+
+#header nav a{
+    margin: 10px 14px;
+}
+#up-section{
+    background-image: url(eve.jpg);
+    height: 70vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #f0f0f0;
+}
+#news-section #up-section-heading{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+#news-section #content{
+    height: 400px;
+    text-align: center;
+} 
+#heading{
+    opacity:0.3;
+    font-size: 160px;  
+    text-align: center;
+    justify-content: center;
+    /* padding-top: 100px; */
+    color: white;
+ }
+ #para{
+    padding-top: 30px;
+     color: white;
+     margin-left: 12px;
+     font-size: 20px;
+     text-align: center;
+ }
+ #socialLinks{
+    margin: 22px 0 40px 0;
+    justify-content: center;
+}
+#socialLinks nav img{
+    height: 22px;
+    margin-left: 26px;
+ }
+#left_news{
+    height: 550px;
+    background-color: white;
+}
+#news-section #content #news-heading nav a
+{
+    height: 50px;
+}
+#news-section main {
+    margin-top: 60px;
+    margin-left: 139px;
+    margin-right: 139px;
+    display: grid;
+    grid-template-rows: repeat(2,550px);
+    grid-template-columns: repeat(auto-fit,minmax(350px,350px));
+    justify-content: center;
+    grid-row-gap: 80px;
+    grid-column-gap: 19px;
+    grid-auto-rows: 550px;
+}
+#news-section main #left_news #card
+{
+    width: 350px;
+}
+#newsimg
+{
+    height: 350px;
+}
+#news-section #article #news #title
+{
+    margin: 5px 5px 30px 5px;
+}
+#news-section #button
+{
+    text-align: center;
+}
+#news-section #button #more-news
+{
+    background-color: #E5E5E5;
+    color: #919191;
+    text-align: center;
+    width: 260px;
+    height: 58px;
+    border-radius: 120px;
+    border: none;
+    margin: 40px 0 80px 0;
+}
+.news-short-description
+{
+    padding-left: 10px;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:-webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+.news-time
+{
+    padding-left: 10px;
+    height: 18px;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+.news-title
+{
+    padding-left: 10px;
+    font-size: 24px;
+    color: #141414;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.news-category{
+    background: #4E4E6D 0% 0% no-repeat padding-box;
+    padding: 4px;
+    color: white;
+    margin-left: 8px;
+    margin-top: -35px;
+    width: 110px;
+    height: 20px;
+    font-size: 14px;
+    letter-spacing: 0.23px;
+}
+
+.news-Press-Release{
+    text-align: center;
+    font: Bold 35px Montserrat;
+    font-weight: 800;
+    color: #000000;
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+.pressRelease-Description{
+    text-align: center;
+    font-size: 16px;
+    margin-left: 225px;
+    margin-right: 225px;
+    color: #616161;;
+}

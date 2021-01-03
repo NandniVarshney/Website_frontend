@@ -1,0 +1,18 @@
+#header{
+    flex-wrap: wrap;
+    overflow: auto;
+}
+#header a{
+    flex-wrap: wrap;
+    color: white;
+    margin-top: 20px;
+    font-size: 14px;
+}
+#header nav a{
+    margin: 20px 14px;
+}
+#header #about-us{
+    margin: 20px 20px;
+    color: white;
+    font-size: 14px;
+}

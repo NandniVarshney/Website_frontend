@@ -1,0 +1,53 @@
+<section class="flex-v" id="aboutus-section">
+  <section id="up-section center">
+    <div class="flex-v center" id="upper">
+      <h1 id="heading">About Us</h1>
+    </div>
+  </section>
+  <article id="box" class="card">
+    <h1 style="padding-top: 30px;">
+      <b class="LoRa"><img class="loraImg" src="assets/image/LoRa.png"></b>
+    </h1>
+    
+    <p class="loraPara" >
+      <br> SenRa, a contributing member of the LoRa Alliance
+      <sup>TM</sup>, is a Low-Power Wide-Area Network (LPWAN) provider for IoT/M2M applications. We provide long distance
+      communication for LoRa enabled devices leveraging open standards architechture of the global LoRa Alliance
+      <sup>TM</sup>. Our connectivity services are available at fractional costs of competing technologies such as cellular,
+      Wi-Fi, or satellite net-works.
+    </p>
+  </article>
+  <div id="grid-container" >
+    <div *ngFor= "let emp of employeeDetails.slice().reverse(); index as i" [ngClass]="{'row': (i%2==0), 'row-reverse': (i%2==1)}">
+      <div class="side">
+        <img src="{{emp.image}}" [ngClass]="{'i': (i%2==0), 'ii': (i%2==1)}">
+      </div>
+      <div class="main">
+        <br><br><br><br><br>
+        <p class="desc">{{emp.description}}</p><br>
+        <br>
+        <p class="name">{{emp.name}}</p>
+        <p class="post">{{emp.position}}</p>
+        <div class="btns">
+          <a href="{{emp.lnkd}}}}" target="_blank"><img src="/assets/image/LinkedIN_colred.png" class="social-links" alt="lnkdn"></a>
+          <a href="{{emp.twtr}}" target="-"><img src="/assets/image/twtr_colred.png" class="social-links" alt="twtr"></a>
+        </div>
+      </div>  
+    </div>
+  </div>
+  <div class="openPos">
+    <div class="side1">
+      <div class="work"><b>WORK WITH US</b></div><br>
+      <div class="see"><b>See Open Positions</b></div>
+      <div class="see"><b>To Join Our Team</b></div><br>
+      <div class="lorem">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five century</div><br>
+      <a routerLink="/careers" class="btn-op"><button class="btn-opn">Open Positions</button></a>
+    </div>
+    <div class="main1">
+      <img src="https://ginjerv2.s3.ap-south-1.amazonaws.com/PHOTO-2020-07-03-12-43-45.png" class="i1">
+      <img src="https://ginjerv2.s3.ap-south-1.amazonaws.com/PHOTO-2020-07-03-12-43-46_1.png" class="i2"><br>
+      <img src="https://ginjerv2.s3.ap-south-1.amazonaws.com/PHOTO-2020-07-03-12-44-06.png" class="i3">
+      <img src="https://ginjerv2.s3.ap-south-1.amazonaws.com/PHOTO-2020-07-03-12-43-52_1.png" class="i4">
+    </div>
+  </div>
+</section>

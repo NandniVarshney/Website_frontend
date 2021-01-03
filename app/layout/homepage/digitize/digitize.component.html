@@ -1,0 +1,84 @@
+<section class="fullBody">
+<section id="digitize" class="center flex-v">
+  <header id="heading">
+    End-to-End Smart Solutions
+  </header>
+  <p id="intro">We provide end-to-end smart solutions leveraging our LoRaWAN network, 
+    analytics platform, and end devices. Contact us today and find out how we can help digitalize your business.</p>
+
+  <figure id="solutions" class="center flex-1">
+    
+    <div *ngFor="let digitiz of digitize" (click)="openinfowindow('')">
+      <img src='assets/image/Smart_Parking.png' width="80px" height="80px" alt="solutions">
+      <div class="name">
+      <p class="icon-text" >Smart Parking</p> 
+      
+      </div>
+    </div>
+  </figure>
+</section>
+
+
+
+<section class="eventsBody">
+  <div class="newEvent">
+    
+    
+    <div class="event" >
+      <img class="eventImg"
+        src={{homepageData[0].image}}
+        alt="event-img">
+      <a href={{homepageData[0].url}} target="_blank">
+        <div class="eventInfo">
+          <div class="dateDiv flex-v">
+            <p class="month">{{month[(homepageData[0].fromDate.substring(5,7) * 1).toString()]}}</p>
+            <div class="date flex-h">{{homepageData[0].fromDate.substring(8,10)}}<div *ngIf="homepageData[0].toDate">-{{homepageData[0].toDate.substring(8,10)}}</div></div>
+          </div>
+          <div class="eventLocationHeading">
+            <div class="location">{{homepageData[0].location}}</div>
+            <div class="eventHeading">{{homepageData[0].heading}}</div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="event" >
+      <img class="eventImg"
+        src={{homepageData[1].image}}
+        alt="event-img">
+      <a href={{homepageData[1].url}} target="_blank">
+        <div class="newsInfo">
+          <div class=newsDate> {{homepageData[1].timestamp.substring(8,10)}} {{month[(homepageData[1].timestamp.substring(5,7) * 1).toString()]}} {{homepageData[1].timestamp.substring(0,4)}}</div>
+          <div class=newsHeading>{{homepageData[1].heading}}</div>
+          <div class=newsContent>{{homepageData[1].description}}</div>
+
+        </div>
+      </a>
+    </div>
+    <div class="event" >
+      <img class="eventImg"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSBd5igYEH8jWgBisaQt-xKIkn6OA1PSstTdtBfwklMjnW18hiI&usqp=CAU"
+        alt="event-img">
+      <a href={{homepageData[2].url}} target="_blank">
+        <div class="newsInfo">
+          <div class=newsDate>{{homepageData[2].timestamp.substring(8,10)}} {{month[(homepageData[2].timestamp.substring(5,7) * 1).toString()]}} {{homepageData[2].timestamp.substring(0,4)}}</div>
+          <div class=newsHeading>{{homepageData[2].heading}}</div>
+          <div class=newsContent>{{homepageData[2].content}}</div>
+
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+   <div class="hereHelp">
+     <div class="bottom">
+     <div class="downContent">
+       <p class="help">We Are Here To Help!</p>
+       <p class="data">Learn more about our service and solution offerings today. We can’t wait to hear from you!</p>
+     </div>
+     <div class="downImg"><img class="imgBuilding" src="https://senraco.com/wp-content/uploads/2019/12/smart-city-scaled.png" alt="building image"></div>
+     <a href="http://localhost:4200/contactUs" >
+      <button class="startButton">Get In Touch<span class="tooltiptext"><i class="fa fa-arrow-right"></i></span></button>
+     </a>
+     </div>
+   </div>
+</section>

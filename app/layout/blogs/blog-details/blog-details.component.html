@@ -1,0 +1,21 @@
+<section class="flex-v" id="blog-details-section">
+    <div class="flex-v" *ngFor = "let blogd of blogDetails">
+        <img src="{{blogd.image}}" alt="" class="blog-Banner-Image">
+        <div class="flex-h" id="header" > 
+        <div class="flex-1"></div>
+        </div>
+    </div>
+    <div *ngFor = "let blogd of blogDetails" >
+        <p class="blog-name-date">{{blogd.date}} <b>{{blogd.author}}</b></p>
+        <p class="blog-title">{{blogd.title}}</p>
+        <img src="{{blogd.image}}" alt=""class="blog-image">
+        <p class="blog-content">{{blogd.content}}</p>
+        <img src="{{blogd.authorImage}}" alt="" class="author-avtar">
+        <p class="author-name">{{blogd.author}}</p>
+        <p class="author-details">{{blogd.authorDescription}}</p>
+    </div>
+    <br>
+    <br>
+    <p class="Related-articles"> Read similar Articles</p>
+</section>
+

@@ -1,0 +1,121 @@
+<section class="flex-v" id="career-section">
+  <div class="flex-v center" id="upper">
+    <h1 id="heading">Careers</h1>
+    <br>
+    <div class="mid-font">Join Our Team</div>
+  </div>
+  <div class="flex-v" id="lower">
+    <br class="big-line">
+    <div class="mid-font center">Open Positions</div>
+    <br>
+    <p class="center" id = "upper-content">Are you intrigued by the advances in the IoT? Are you excited by the opportunity to work with a
+      <br> start-up in cutting edge technology? If so, we can't wait to hear from you.
+      <br>Take a look below and let us know what you think.
+    </p>
+    <div id = "accordion">
+      <mat-accordion [multi]="false">
+        <mat-expansion-panel id = "expansion-panel"  *ngFor = "let item of roles">
+          <mat-expansion-panel-header [collapsedHeight]="'90px'" [expandedHeight]="'90px'">
+            <mat-panel-title><b>{{item.position}}</b></mat-panel-title>
+            <mat-panel-description>
+              <b>{{item.location}}</b>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <div>
+            <h2><b>Job Description</b></h2>
+            <p>{{item.description}}</p>
+          </div><br>
+          <div>
+            <h2><b>Responsibilities and Duties</b></h2>
+            <p>{{item.rnd}}</p>
+          </div><br>
+          <div>
+            <h2><b>Skills and Qualifications</b></h2>
+            <p>{{item.snq}}</p>
+          </div><br>
+          
+          <div>
+            <h2><b>Apply Now</b></h2>
+          <app-career-form></app-career-form> 
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+    
+    <!-- <div id="grid-container2">
+      <div>
+        <b>Relax, We've got you covered</b>
+        <br>
+        <br> Lorem ipsum dolor sit amet, donec vulputate vestibulum, consectetuer leo mauris dui in. Faucibus curae
+        platea a
+        leo arcu. Iaculis convallis repellendus, nunc justo nunc, sit dictum praesent nulla tellus nostra, turpis amet
+        quis,
+        massa elementum. Nonummy fringilla. Leo molestie, et mattis nec in tincidunt mattis leo. Nostra scelerisque. Leo
+        eget quia ut sit, senectus
+      </div>
+      <div>
+        <b>Relax, We've got you covered</b>
+        <br>
+        <br> Lorem ipsum dolor sit amet, donec vulputate vestibulum, consectetuer leo mauris dui in. Faucibus curae
+        platea a
+        leo arcu. Iaculis convallis repellendus, nunc justo nunc, sit dictum praesent nulla tellus nostra, turpis amet
+        quis,
+        massa elementum. Nonummy fringilla. Leo molestie, et mattis nec in tincidunt mattis leo. Nostra scelerisque. Leo
+        eget quia ut sit, senectus
+      </div>
+      <div>
+        <b>Relax, We've got you covered</b>
+        <br>
+        <br> Lorem ipsum dolor sit amet, donec vulputate vestibulum, consectetuer leo mauris dui in. Faucibus curae
+        platea a
+        leo arcu. Iaculis convallis repellendus, nunc justo nunc, sit dictum praesent nulla tellus nostra, turpis amet
+        quis,
+        massa elementum. Nonummy fringilla. Leo molestie, et mattis nec in tincidunt mattis leo. Nostra scelerisque. Leo
+        eget quia ut sit, senectus
+      </div>
+    </div> -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="downPart">
+      <div class="downContent">
+        <div class="flex-v" id="cont-box">
+          <div id="perks">Perks and Benefits</div>
+          <div id="downHeading">Lorem ipsum dolor sit amet, consetetur</div>
+          <div id="content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo</div>
+        </div>
+        <div class="list">
+          <div class="list1">
+            <p class="lists"><i class="fa fa-check-circle" id="bulletIcon"></i><span class="points">Lorem ipsum dolor</span>
+            </p>
+            <p class="lists"><i class="fa fa-check-circle" id="bulletIcon"></i><span class="points">Lorem ipsum dolor</span>
+            </p>
+            <p class="lists"><i class="fa fa-check-circle" id="bulletIcon"></i><span class="points">Lorem ipsum dolor</span>
+            </p>
+          </div>
+          <div class="list2">
+            <p class="lists"><i class="fa fa-check-circle" id="bulletIcon"></i><span class="points">Lorem ipsum dolor</span>
+            </p>
+            <p class="lists"><i class="fa fa-check-circle" id="bulletIcon"></i><span class="points">Lorem ipsum dolor</span>
+            </p>
+          </div>
+    
+        </div>
+      </div>
+      <div class="downPics">
+        <div class="picRow">
+          <div class="picCol">
+            <div class="pic1"></div>
+            <div class="pic2"></div>
+          </div>
+          <div class="picCol">
+            <div class="pic3"></div>
+            <div class="pic4"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    </div>
+    </section>

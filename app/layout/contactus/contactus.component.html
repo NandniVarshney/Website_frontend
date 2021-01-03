@@ -1,0 +1,87 @@
+<div class="contactBody">
+  <div class="background-header">
+
+  </div>
+  <section class="flex-v">
+    <header class="header"><b>Get In Touch</b></header>
+    <br>
+    <div class="flex-horizontal flex-wrap " id="address"> 
+      <!-- Faulty id address -->
+      <pre>
+        <img id = "usimage" src="assets/image/USLogo.png" alt="not found" width = "25" height="25" align="middle" ><span>USA Office</span>
+            <address class="address">201 South Biscayne Blvd, 28th Floor,<br>Miami, Florida 33131.</address>
+      </pre>
+      <div  id = "spacebox">
+      </div>
+      <pre>
+        <img id = "indiaimage" src="assets/image/IndiaLogo.png" alt="not found" width = "25" height="25" align="middle" ><span>India Office</span>
+        <address class="address">   N-161A, 5th Floor, Yusuf Sarai,
+   Gautam Nagar, New Delhi 110049</address> 
+      </pre>
+    </div>
+    <div class="flex-horizontal flex-wrap">
+      <div class="flex-1" id="contact-card">
+        <!-- contact card id is also a Faulty id -->
+        <h3> <b>Contact Us</b></h3>
+        <br>
+        <div class="details">Lorem ipsum dolor sit amet, illum definitiones no quo.
+          <br>
+          <br>
+          <br>
+        </div>
+        <br>
+        <pre class="contact-info">
+        <a href="" class="social-handle"><img src="assets/image/phone-white.png" alt="not found" width = "25" height="25" align="left">1.866.504.LPWA (5792)</a>
+        
+        <a href="" class="social-handle"><img src="assets/image/arrobaWhiteLogo.png" alt="not found" width = "25" height="25" align="left">info@senraco.com</a>
+      
+        <a href="" class="social-handle"><img src="assets/image/Headphone-symbol.png" alt="not found" width = "25" height="25" align="left">support@senraco.com</a>
+        </pre>
+        <br>
+        <span>Contact from <b>Social Media</b></span>
+        <br>
+        <nav class="social">
+          <a href="https://www.facebook.com/senraco" target= "_blank"><img src="assets/image/Fb-white.png" alt="not found" width="20" height="20" align="middle"></a>
+          <a href="https://www.twitter.com/senraco" target= "_blank"><img src="assets/image/Twitter-white.png" alt="not found" width="20" height="20" align="middle"></a>
+          <a href="https://www.linkedin.com/" target= "_blank"><img src="assets/image/LinkedIn-white.png" alt="Linkedin-white" width="20" height="20" align="middle"></a>
+        </nav>
+      </div>
+      <form class="center flex-2 " id="contact-form" [formGroup]="contactUs">
+          <h3>Contact Form</h3>
+          <mat-form-field>
+            <mat-label>Full Name</mat-label>
+            <input matInput placeholder="Your name" type="text" [formControl] = "contactUs?.controls?.name">
+          </mat-form-field>
+          
+          <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Email" [formControl] ="contactUs?.controls?.email">
+            <mat-error class="error" *ngIf="contactUs?.controls?.email.status === 'INVALID'">
+              Please enter a valid email address
+            </mat-error>
+            <mat-error class="error" *ngIf="contactUs?.controls?.email.errors?.required">
+              Email is <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+  
+          <mat-form-field>
+            <mat-label>Phone Number</mat-label>
+            <input type="number" matInput placeholder="Your contact number" [formControl]="contactUs?.controls?.phone">
+            <mat-error class="error" *ngIf="contactUs?.controls?.phone.errors?.required">
+              Number is <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+  
+          <mat-form-field>
+            <mat-label>Write message</mat-label>
+            <input matInput placeholder="Type here" [formControl]="contactUs?.controls?.message">
+          </mat-form-field>
+  
+          <button
+        mat-raised-button
+        color="primary"
+        (click)="onSubmit()" class="btn-opn">{{buttonText}}</button>
+      </form>
+    </div>
+  </section>
+</div>

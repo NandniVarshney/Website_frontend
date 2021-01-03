@@ -1,0 +1,16 @@
+<button (click)="clickAction.emit($event)"
+        *ngIf="link"
+        [disabled]="disabled()"
+        [ngClass]="{'primary-bg':primary,hide: !visible}"
+        [routerLink]="link"
+        class="app-button">
+  {{label }}
+</button>
+<button (click)="clickAction.emit($event)"
+        *ngIf="!link"
+        [disabled]="disabled()"
+        [ngClass]="{'primary-bg':primary,hide: !visible}"
+        class="app-button">
+  <span *ngIf="icon" class="material-icons button__icon">{{icon}}</span>
+  {{label }}
+</button>

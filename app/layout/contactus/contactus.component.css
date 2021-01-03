@@ -1,0 +1,258 @@
+/* section{
+    padding: 0px 10%;
+    z-index: 1;
+
+    background: linear-gradient(to right, #7fbf3f,#28d144);
+    
+}
+
+.social-handle
+{
+    text-align: left;
+    color: white;
+}
+.background-footer
+{
+    z-index: -1;
+    height: 30px;
+}
+h3
+{
+    text-align: left;
+}
+header{
+    font-size: 30px;
+    margin-top: 30px
+}
+.butt{
+    border-radius: 500px;
+    padding: 15px 40px;
+    background-color:black;
+    color: white;   
+    border: none; 
+}
+.flex-1
+{
+    flex: 1;
+}
+.flex-2{
+    flex:2;
+}
+#address{
+    color:white;
+}
+.contact-us-form{
+    padding:25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: #f2f6ff;
+    margin: 30px 0px;
+}
+
+#contact-card{
+    padding:25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: #49c45e   ;
+    color:white;
+    margin: 30px 0px;
+}
+
+.contact-info {
+    color: white;
+    text-decoration: none;
+    text-align: left;
+
+}
+.header{
+    color: white;
+    font-weight: 500;
+    font-size: 36px;
+}
+address{
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+}
+.details{
+    font-size: 26px;
+    font-weight: 500;
+}
+.social > a
+{
+    padding-right: 40px;
+}
+.contact-info > a{
+    font-size: 14px;
+} */
+
+section{
+    padding: 0px 10%;
+    z-index: 1;
+    /* margin-bottom: 50px; */
+    /* height: 100vh; 
+    overflow: auto; */
+    background: linear-gradient(to right,#7fbf3f, #28d144);
+    height: 460px;
+    
+    
+}
+.contactBody{
+    background-color: whitesmoke;
+    
+}
+/* .background-header
+{
+    z-index: -1;
+    height: 500px;
+    background-color: red;
+} */
+.social-handle
+{
+    text-align: left;
+    color: white;
+}
+.background-footer
+{
+    z-index: -1;
+    height: 30px;
+}
+
+#usimage{
+    
+    margin-left: -26px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+
+#indiaimage{
+    
+    margin-left: -14px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+}
+#address span{
+    font-size: 20px;
+}
+#spacebox{
+    width: 300px;
+}
+h3
+{
+    text-align: left;
+}
+
+header{
+    font-size: 30px;
+    margin-top: 30px
+}
+.butt{
+    border-radius: 500px;
+    padding: 15px 40px;
+    background-color:black;
+    color: white;   
+    border: none; 
+}
+.flex-1
+{
+    flex: 1;
+}
+.flex-2{
+    flex:2;
+}
+#address{
+    color:white;
+}
+#contact-form {
+    padding:25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: rgb(255, 255, 255);
+    line-height: 40px;
+    margin: 30px 0px;
+}
+
+#contact-card{
+    padding:25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: #49c45e   ;
+    color:white;
+    margin: 30px 0px;
+}
+
+#contact-card h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.contact-info {
+    color: white;
+    text-decoration: none;
+    text-align: left;
+
+}
+.header{
+    color: white;
+    font-weight: 500;
+    font-size: 36px;
+}
+address{
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+}
+.details{
+    font-size: 26px;
+    font-weight: 500;
+}
+.social > a
+{
+    padding-right: 40px;
+}
+.contact-info > a{
+    font-size: 14px;
+}
+
+.contact-us-form{
+    padding:25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: #f2f6ff;
+    margin: 30px 0px;
+}
+
+#contact-form h3{
+    text-align: center;
+}
+
+.mat-form-field{
+    width: 100%;
+}
+
+.background-footer
+{
+    z-index: -1;
+    height: 210px;
+}
+.btn-opn{
+    background-color:black;
+    color: whitesmoke;
+    height: 50px;
+    width: 200px;
+    border-radius: 45px;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 35%;
+    border: none;
+    float: left;
+}
+.error{
+    font-size: 10px;
+}
+
+
+
+
+.address{
+    margin-top: -30px;
+    margin-left: 10px;
+}
+.contactBody{
+    height:700px;
+}

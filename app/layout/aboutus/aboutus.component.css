@@ -1,0 +1,395 @@
+#aboutus-section{
+    height: 100%;
+    width:100%;;
+    overflow: hidden;
+    /* overflow: auto; */
+    background-color: whitesmoke;
+
+}
+#upper{
+    background-image:url("https://ginjerv2.s3.ap-south-1.amazonaws.com/About-us.png")  ; 
+    padding : 0px;
+    height: 70vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+}
+ #heading{
+    font-size: 150px;
+    color: white;
+    opacity: 0.3;
+}
+
+ 
+ #aboutUs-heading {
+    margin: 100px 0px 0px 0px;
+     font-size: 36px;
+     margin-left: 12px;
+     color: white;
+     font-weight: 500;
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#page{
+    height: 70vh;
+    background-image: url("https://ginjerv2.s3.ap-south-1.amazonaws.com/About-us.png");
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+
+#aboutus-section #aboutus-heading{
+    font-size: 150px;
+    /* background-image: url("ud.png"); */
+    opacity : .3;
+    /* padding: 50px 0px; */
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    /*margin: 120px;*/
+    margin: 8%;
+    
+
+}
+#aboutus-section #box{
+    padding:2%;
+    /*width: 1310px;*/
+    position: relative;
+    width: 78%;
+    height: 300px;
+    background-color: white;
+   
+
+}
+.loraImg{
+    margin-top: -20px;
+    width: 700px;
+    height: 80px;
+    /* margin-left: 380px; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+.loraPara{
+    color: #707070;
+    font-size: 16px;
+    text-align: center;
+    margin-left: 24px;
+    margin-right: 24px;
+    font: Regular 16px/19px Montserrat;
+    letter-spacing: 0px;
+}
+#aboutus-section #grid-container{
+    display: grid;
+    background-color: whitesmoke;
+    grid-gap: 20px;
+    /*grid-template-columns: 1200px;*/
+    grid-template-columns: 100%;
+    border : 3px red;
+    padding-left:140px;
+    justify-content: center;
+    /* padding-right: 120px; */
+    padding-bottom: 60px;
+    margin: 0px 110px 30px 48px;
+    text-align: center;
+
+}   
+
+/*#aboutus-section #grid-container > div{
+    background-color: rgba(255, 255, 255, 1);
+    width: 100%;
+    height: 250px;
+    grid-column: 1/2;
+    
+} */
+
+img{
+    margin: 0;
+    padding: 0;
+}
+#aboutus-section #about-us{
+    margin: 20px 20px;
+}
+#aboutus-section #header{
+    flex-wrap: wrap;
+    overflow: auto;
+}
+#aboutus-section #header nav a{
+    flex-wrap: wrap;
+    color: white;
+    margin-top: 20px;
+    font-size: 14px;
+}
+#aboutus-section nav a{
+    margin: 10px 14px;
+}
+.social-links{
+    height: 25px;
+    margin:0px;
+    padding-right: 5px;
+    padding-top: 5px;
+    height: 30px;
+    width: 30px;
+}
+
+#Team-heading{
+    font-weight: 400;
+    text-align: center;
+    font-size: 36px;
+    margin-top:0px;
+    
+}
+span{
+    margin-top: 10px;
+}
+#box-section{
+    margin: 0px;
+}
+#box{
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    margin-top: 30px;
+        
+}
+.btn-opn{
+    background-color: black;
+    color: whitesmoke;
+    height: 50px;
+    width: 200px;
+    border-radius: 45px;
+    text-align: center;
+    padding-left: 0px;
+    margin-left: 170px;
+
+    border: none;
+    float: left;
+
+    
+}
+.btn-op{
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 200px;
+    border-radius: 45px;
+    border: none;
+    
+}
+.s{
+    padding: 0px;
+}
+.openPos{
+    background-color: #7fbf3f;
+    display: flex;
+    height: 450px;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.flex-container{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 200px;
+    width: 500px;
+}
+.i{
+    height: 100%;
+    width: 100%;
+    padding-left: 0%;
+    padding-right: 7%;
+
+}
+.ii{
+    height: 100%;
+    width: 100%;
+    /*padding-left: 20px;*/
+    padding-left: 7%;
+    padding-right: 0%;
+}
+.side{
+    flex: 40%;
+    background-color: whitesmoke;
+
+}
+.side1{
+    flex: 40%;
+}
+.main1{
+    flex: 60%;
+    text-align: center;
+}
+.main{
+    flex: 60%;
+    background-color: whitesmoke;
+    
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 96%;
+}
+.row-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    width: 96%;
+}
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style the body */
+  body {
+    font-family: Arial;
+    margin: 0;
+  }
+.desc{
+    text-align: left;
+    font-size: 16px;
+    color: lightslategrey;
+}  
+.name{
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    margin-bottom: 6px;
+
+}
+.post{
+    color:lightslategray;
+    text-align: left;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+.btns{
+    align-items: baseline;
+    text-align: left;
+    
+}
+.work{
+    text-align: left;
+    padding-left: 120px;
+    padding-top: 90px;
+    padding-bottom: 0px;
+    color: whitesmoke;
+    font-size: 16px;
+    margin-left: 60px;
+}
+.see{
+    margin-left: 60px;
+    text-align: left;
+    padding-left: 120px;
+    padding-top: 10px;
+    font-size: 28px;
+    font-weight: 900;
+    color: whitesmoke;
+    font-family: arial;
+    scroll-behavior: auto;
+}
+.lorem{
+    color: whitesmoke;
+    text-align: left;
+    font-size: 16px;
+    padding-left: 120px;
+    margin-left: 60px;
+}
+.i1{
+    height: 175px;
+    width: 150px;
+    /*padding-bottom: auto;
+    padding-right: 0;*/
+}
+.i2{
+    height: 250px;
+    width: 200px;
+    padding-left: 20px;
+    margin-top: -50px;
+}
+.i3{
+    height: 175px;
+    width: 175px;
+    padding-bottom: 40px;
+    padding-top: 2px;
+}
+.i4{
+    height: 200px;
+    width: 200px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.LoRa{
+    font-weight: 750;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.mem{
+    color: gray;
+    font-size: 40px;
+}
+.tm{
+    font-size: 8px;
+    vertical-align: 20px;
+}
+.main1{
+    margin-left: 100px;
+}
+/*@media screen and (max-width:400px) {
+    #grid-container{
+        padding-left: 0px;
+    }
+    #box-section{
+        width: 100%;
+        padding-left: 70px;
+    }
+    .i{
+        height: 500px;
+        width: 100%;
+        
+    }
+    .i1{
+        display: none;
+        //padding-bottom: auto;
+        //padding-right: 0;
+    }
+    .i2{
+        display: none;
+    }
+    .i3{
+        display: none;
+    }
+    .i4{
+        display: none;
+    }
+  }*/

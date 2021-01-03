@@ -1,0 +1,196 @@
+#events-section{
+    overflow: hidden;
+}
+#events-section nav a{
+    margin: 10px 14px;
+}
+#upper{
+    background-image:url("https://ginjerv2.s3.ap-south-1.amazonaws.com/eve.jpg")  ; 
+    padding : 0px;
+    height: 70vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+}
+
+#heading{
+    opacity:0.3;
+    font-size: 160px;
+    
+    text-align: center;
+    justify-content: center;
+    /* padding-top: 100px; */
+    color: white;
+ }
+ #socialLinks nav img{
+    height: 22px;
+ }
+ #date{
+     font-size: 20px;
+     margin-top: 12px;
+ }
+ #time{
+    margin: 15px 0 15px 12px;
+    color: white;
+ }
+ #address{
+     font-style: normal;
+ }
+ #para{
+    padding-top: 30px;
+     color: white;
+     margin-left: 12px;
+     font-size: 20px;
+     text-align: center;
+ }
+ #socialLinks{
+    margin: 22px 0 40px 0;
+    justify-content: center ;
+}
+#down-section{
+    align-items: center;
+} 
+#black-btn{
+    border-radius: 500px 0px 0px 500px;
+    padding: 15px 40px;
+    background-color:black;
+    color: white;
+    border:none;
+    margin: 100px 0px; 
+    height: 70px; 
+}
+#green-btn{
+    border-radius: 0px 500px 500px 0px;
+    padding: 15px 60px;
+    background-color:#81b040;
+    color:white;
+    border:none;
+    margin: 100px 0px;  
+    height: 70px;
+    border-color: black;
+}
+
+
+
+.eventsBody{
+    background-color: #F8F8F8;
+}
+.newEvent{
+    margin: 60px 138px 0px 138px; 
+    display: grid;
+    grid-template-rows: 488px;
+    grid-template-columns: repeat(auto-fit,minmax(350px,350px));
+    justify-content: center;
+    grid-row-gap: 80px;
+    grid-column-gap: 19px;
+    grid-auto-rows: 488px;
+}
+.pastEvent{
+    margin: 60px 138px 0px 138px; 
+    grid-column-gap: 19px;
+    display: grid;
+    grid-template-rows: 488px;
+    grid-template-columns: repeat(auto-fit,minmax(300px,350px));
+    justify-content: center;
+    grid-row-gap: 80px;
+    grid-auto-rows: 488px;
+    margin-bottom: 30px;
+}
+.event{
+    background-color:#FFFFFF;
+    justify-content: center;
+    text-align: center;
+}
+ .eventInfo{
+    display: flex;
+    flex-direction: row;
+    height: 137px;
+    width: 100%;
+} 
+.eventLocationHeading{
+    display: flex;
+    flex-direction: column;
+}
+.location{
+   color:#FF8364;
+   font-size: 12px;
+   text-align: left;
+   margin-top: 25px;
+   margin-right: 23px;
+   white-space: nowrap; 
+   overflow: hidden; 
+   width: 200px;
+   text-overflow: ellipsis ;
+}
+.dateDiv{
+    font-size:20px;
+    width:65px;
+    height: 80px;
+    justify-content: center;
+    background-color: #F8F8F8;
+    margin: 25px 11px 0px 15px;
+    padding:11px;
+    height: 65px;
+    width: 58px;
+}
+.month{
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: -0.2px;
+    color: #616161;
+}
+.date{
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: -0.4px;
+    color: #141414;
+    font-weight: 900;
+}
+.eventHeading{
+    font-size:24px;
+    text-align: left;
+    font-weight: 600;
+    color: #141414;
+    margin: 8px 23px 29px 0px;
+    height: 58px;
+    width: 230px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    letter-spacing: -0.4px; 
+    word-wrap: break-word;
+    
+}
+
+.eventImg{
+    width: 100%;
+    height: 350px;
+}
+.loadmore{
+    font-size: 16px;
+    width: 259px;
+    height: 58px;
+    border-radius: 120px;
+    border: none;
+    background-color:#E5E5E5;
+    color: #919191;
+    margin:60px 0px 46px 0px;
+}
+.centerallign{
+    justify-content: center;
+    text-align: center;
+}
+.pastEventHeading{
+    text-align: center;
+    font-weight: 900;
+    margin-top: 60px;
+    font: Bold 35px/45px Montserrat;
+}
+.textPastEvents{
+    margin: 11px 224px 0px 220px; 
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    color: #707070;
+}

@@ -1,0 +1,337 @@
+/* section{
+    height: 100%;
+    overflow: hidden;
+    background: linear-gradient(to right, #7fbf3f,#49c45e);
+    flex-wrap: wrap;
+
+}
+#services-right-part{
+    margin-left: 10px;
+}
+
+.small-font{
+    font-size: 15px;
+}
+
+.mid-font{
+    font-size: 30px;
+}
+
+.big-line{
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+.article-line{
+    line-height: 25px;
+    margin-right: 100px;
+    font-size: 15px;
+}
+.concentric-circles {
+    width: 250px;
+    height: 250px;
+
+    margin-left: 250px;
+    background-color: #7fbf3f;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    transition: all 0.2s ease-in-out;
+    animation: ripple 2.0s 0.2s infinite;
+    -webkit-animation: ripple 2.0s 0.2s  infinite;
+  }
+  @keyframes ripple {
+    20% {
+      box-shadow: 0px 0px 0px 6px rgb(16, 231, 45),
+                  0px 0px 0px 8px #222;
+                  width: 10px;
+    }
+
+    50% {
+      box-shadow: 0px 0px 0px 6px rgb(16, 231, 45),
+                  0px 0px 0px 8px #222,
+                  0px 0px 0px 14px rgb(16, 231, 45),
+                  0px 0px 2px 16px #888;
+    }
+
+    100% {
+      box-shadow: 0px 0px 0px 6px rgb(16, 231, 45),
+                  0px 0px 0px 8px #222,
+                  0px 0px 0px 14px rgb(16, 231, 45),
+                  0px 0px 2px 16px #888,
+                  0px 0px 0px 22px rgb(16, 231, 45),
+                  0px 0px 5px 24px #ddd;
+    }
+  }
+
+#learn-more{
+    border-radius: 500px;
+    margin-top: 25px;
+    padding: 20px 40px;
+    background-color:black;
+    color: white;
+    border-color: black;
+    width: 200px;
+    margin-bottom: 80px;
+}
+#watch-video{
+    border-radius: 250px;
+    padding: 15px 40px -1px 40px;
+    background-color:transparent;
+
+    border-color: black;
+    border-style: strong;
+    margin-bottom: 15px;
+    font-size: 14px;
+    height: 43px;
+    width: 160px;
+    border-width: 1.5px;
+    font-weight: 600;
+}
+
+#main{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+#heading{
+    font-size: 36px;
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+#article{
+    line-height: 25px;
+    margin-right: 10%;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: auto auto ;
+
+    grid-column-gap: 20px;
+    grid-row-gap: 50px;
+    margin-right: 10%;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+#grid *{
+    line-height: 50px;
+    margin-top: -14px;
+    padding:0px;
+}
+#img{
+    padding: 50px 240px 60px 240px;
+}
+#icon{
+    font-size: 14px;
+    margin-right: 5px;
+}
+.text{
+    margin-left: 20px;
+} */
+
+.background{
+    width: 100%;
+    background-color: whitesmoke;
+    margin-bottom: 80px;
+    /* height: 688px; */
+}
+.blackbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.boxes{
+    display: flex;
+    flex-direction: row;
+}
+.verticalBox{
+    display: flex;
+    flex-direction: column;
+
+}
+.box1{
+    background-color:#040431;
+    height: 424px;
+    width: 300px;
+    margin-top: 156px;
+    margin-left: 172px;
+    margin-right: 16px;
+}
+.box2{
+    background-color: #040431;
+    height: 220px;
+    width: 220px;
+    margin-top: 138px;
+    margin-bottom: 16px;
+}
+.box3{
+    background-color:#040431;
+    height: 150px;
+    width: 150px;
+
+}
+.box1Text
+{
+    font: Regular 16px/19px Montserrat;
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin-top: 194px;
+    margin-left: 36px;
+    margin-right: 34px;
+    justify-content: center;
+    text-align: center;
+}
+.box2Text
+{
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin-top: 82px;
+    margin-left: 36px;
+    margin-right: 34px;
+    justify-content: center;
+
+}
+.box3Text
+{
+    font: Regular 13px/16px Montserrat;
+    font-size: 13px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin-top: 50px;
+    margin-left: 18px;
+    margin-right: 18px;
+    justify-content: center;
+    text-align: center;
+}
+.connection{
+    margin-top: 203px;
+    margin-left: 194px;
+}
+.connectionHeading{
+    text-align: left;
+font: Bold 45px/55px Poppins;
+letter-spacing: 0px;
+color: #040431;
+text-transform: capitalize;
+opacity: 1;
+}
+.connectionData
+{
+    margin-top: 5px;
+    text-align: left;
+font: Light 20px/30px Poppins;
+letter-spacing: 0px;
+color: #36384D;
+}
+.price
+{
+    text-align: left;
+font: Bold 20px/30px Poppins;
+letter-spacing: 0px;
+color: #36384D;
+}
+.connectionSubData{
+    margin-top: 15px;
+    width: 448px;
+    text-align: left;
+    font: Regular 16px/22px Open Sans;
+letter-spacing: 0px;
+color: #36384D;
+opacity: 1;
+
+}
+.startButton{
+    margin-top: 25px;
+    background: #7EB226 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    width: 126px;
+    height: 50px;
+    border: none;
+    text-align: left;
+    font: Regular Poppins;
+    font-size: 15px;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    padding-left: 25px;
+
+}
+.tooltiptext
+{
+    visibility: hidden;
+}
+.startButton:hover {
+    width:210px;
+    background-color:#96C532;
+    z-index: 3;
+  }
+  .startButton:hover .tooltiptext {
+    visibility: visible;
+    font-size: 20px;
+    margin-left: 30px;
+    width: 20px;
+    z-index: 3;
+  }
+
+.arrow{
+    margin-left: 32px;
+}
+
+
+@media(max-width: 1260px){
+    .box1{
+        background-color:#040431;
+        height: 254px;
+        width: 180px;
+        margin-top: 156px;
+        margin-left: 24px;
+        margin-right: 16px;
+    }
+    .box2{
+        background-color: #040431;
+        height: 132px;
+        width: 132px;
+        margin-top: 138px;
+        margin-bottom: 16px;
+    }
+    .box3{
+        background-color:#040431;
+        height: 90px;
+        width: 90px;
+    
+    }
+    .box1Text{
+        display: none;
+    }
+    .box2Text{
+        display: none;
+    }
+    .box3Text{
+        display: none;
+    }
+    .connection{
+        margin-top: 70px;
+        margin-left: 25px;
+    }
+    .connectionSubData{
+        margin-top: 15px;
+        width: 300px;
+        text-align: left;
+        font: Regular 16px/22px Open Sans;
+    letter-spacing: 0px;
+    color: #36384D;
+    opacity: 1;
+    
+    }
+    .connectionHeading{
+        font: Bold 30px Poppins;
+    }
+}

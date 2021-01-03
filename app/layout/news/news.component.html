@@ -1,0 +1,76 @@
+<section class="flex-v" id="news-section">
+  <section id="up-section">
+    <div class="flex-v center" id="upper">
+      <h1 id="heading">News</h1>
+      <p id="para">Follow Us to Know More About Event</p>
+      <div class="flex-h" id="socialLinks">
+        <nav>
+          <a href="https://www.facebook.com/senraco/">
+            <img src="assets/image/Fb-white.png" alt="fb-img">
+          </a>
+          <a href="https://twitter.com/senraco">
+            <img src="assets/image/Twitter-white.png" alt="twt-img">
+          </a>
+          <a href="https://www.linkedin.com/company/senra/">
+            <img src="assets/image/LinkedIn-white.png" alt="lnkdin-img">
+          </a>
+          <a href="https://www.youtube.com/channel/UCsHkIVXGT-EK6EsGnZfgs1w">
+            <img src="assets/image/YouT-white.png" alt="YouT-img">
+          </a>
+        </nav>
+      </div>
+    </div>
+  </section>
+  <main class="news-divs" *ngIf='featuredNews.length !== 0'>
+    <div class="div1" style="height: 350px;" *ngFor="let newzFeature of featuredNews">
+      <div id="left_news" class="flex-v">
+        <div id="card" class="flex-v">
+          <img id="newsimg" src="{{newzFeature.image}}" alt="nd.jpg">
+          <p class="news-category">{{newzFeature.category}}</p>
+          <p class="news-time">{{newzFeature.timestamp.substring(8,10)}}
+            {{ month[(newzFeature.timestamp.substring(5,7)*1).toString()]}} {{newzFeature.timestamp.substring(0,4)}}</p>
+          <a class="news-title" href="{{newzFeature.url}}">{{newzFeature.heading}}</a>
+          <div class="flex-h ">
+            <div class="flex-v">
+              <p class="news-short-description">{{newzFeature.description}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div id="button">
+    <button id="more-news" *ngIf="flagfeature && featuredNews.length !== 0" (click)="loadFeature()">Load More
+      News</button>
+  </div>
+  <!-- PRESS RELEASES -->
+
+  <span class="news-Press-Release" *ngIf='pressNews.length !== 0'>Press Releases</span>
+  <p class="pressRelease-Description" *ngIf='pressNews.length !== 0'>Lorem ipsum dolor sit amet, consetetur sadipscing
+    elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+    eos et accusam et justo</p>
+  <main class="news-divs" *ngIf='pressNews.length !== 0'>
+    <div class="div1" style="height: 350px;" *ngFor="let newzPress of pressNews">
+      <div id="left_news" class="flex-v">
+        <div id="card" class="flex-v">
+          <img id="newsimg" src="{{newzPress.image}}" alt="nd.jpg">
+          <p class="news-category">{{newzPress.category}}</p>
+          <p class="news-time">{{newzPress.timestamp.substring(8,10)}}
+            {{ month[(newzPress.timestamp.substring(5,7)*1).toString()]}} {{newzPress.timestamp.substring(0,4)}}</p>
+          <a class="news-title" href="{{newzPress.url}}">{{newzPress.heading}}</a>
+          <div class="flex-h ">
+            <div class="flex-v">
+              <p class="news-short-description">{{newzPress.description}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <br>
+  <br>
+  <br>
+  <div id="button">
+    <button id="more-news" *ngIf="flagPress && pressNews.length !== 0" (click)="loadPress()">Load More News</button>
+  </div>
+</section>

@@ -1,0 +1,13 @@
+<section class="main">
+    <div class="searchBar">
+        <p class="heading">SEARCH BAR</p><br><br>
+        <input [(ngModel)]="userName" type="text" name="box" placeholder="Search Names here...">
+        <div class="btn">
+            <button class="searchBtn" (click)='search()'><span id="text">Search</span></button>
+        </div>
+    </div>
+    <div class="info" *ngIf="flag">
+        <img class="profilePic" src={{this.info.avatar_url}} alt="profile pic">
+        <div class="name">{{this.info.login}}</div>
+    </div>
+</section>

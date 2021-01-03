@@ -1,0 +1,76 @@
+<section class="flex-v" id="blogs-section">
+  <div id="section-1" class="flex-v">
+    <article id="content" class="flex-v flex-1">
+      <div class="flex-v center" id="upper">
+        <h1 id="heading">Blogs</h1>
+        <p id="para">Follow Us to Know More About Event</p>
+        <div class="flex-h" id="socialLinks">
+          <nav>
+            <a href="https://www.facebook.com/senraco/">
+              <img src="assets/image/Fb-white.png" alt="fb-img">
+            </a>
+            <a href="https://twitter.com/senraco">
+              <img src="assets/image/Twitter-white.png" alt="twt-img">
+            </a>
+            <a href="https://www.linkedin.com/company/senra/">
+              <img src="assets/image/LinkedIn-white.png" alt="lnkdin-img">
+            </a>
+            <a href="https://www.youtube.com/channel/UCsHkIVXGT-EK6EsGnZfgs1w">
+              <img src="assets/image/YouT-white.png" alt="YouT-img">
+            </a>
+          </nav>
+        </div>
+      </div>
+    </article>
+    <main class="blogs-divs" *ngIf='blogs.length !== 0'>
+      <div class="div1" *ngFor="let blog of blogs">
+        <div id="left_blogs" class="flex-v" style="height: 540px;">
+          <div id="card" class="flex-v">
+            <img id="blogsimg"
+              src="https://image.shutterstock.com/z/stock-photo--micro-peacock-feather-hd-image-best-texture-background-colourful-indian-peacock-feather-1127238599.jpg">
+            <p class="blogs-time"> {{blog.timestamp.substring(8,10)}}
+              {{month[(blog.timestamp.substring(5,7) * 1).toString()]}} {{blog.timestamp.substring(0,4)}}</p>
+            <a class="blogs-title" routerLink="/blogs/{{blog.heading}}" routerLinkActive="active">{{blog.heading}}</a>
+            <div class="flex-h ">
+              <div class="flex-v">
+                <p class="blog-short-description">{{blog.content}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- <br>
+    <br> -->
+    <div id="button">
+      <button id="more-blogs" *ngIf="flagNew && blogs.length !== 0" (click)="loadMore() ">Load More</button>
+    </div>
+    <br>
+    <br>
+    <!-- <span class="news-sub-heading" *ngIf='news.length !== 0'> Latest News </span>
+    <p class="news-sub-description" *ngIf='news.length !== 0'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Ducimus dolorem fuga adipisci tempore possimus,
+      impedit cupiditate laborum inventore,voluptates</p>
+    <main id="news-divs" *ngIf='news.length !== 0'>
+      <div class="div1" style="height: 350px;" *ngFor="let newz of news">
+        <div id="left_news" class="flex-v" style="height: 540px;">
+          <div id="card" class="flex-v">
+            <img id="newsimg" src="{{newz.image}}" alt="nd.jpg">
+            <span class="news-category">{{newz.category}}</span>
+            <p class="news-time"> {{newz.timestamp.substring(8,10)}}
+              {{month[(newz.timestamp.substring(5,7) * 1).toString()]}} {{newz.timestamp.substring(0,4)}}</p>
+            <a class="news-title" href="{{newz.url}}">{{newz.heading}}</a>
+            <div class="flex-h ">
+              <div class="flex-v">
+                <p class="news-short-description">{{newz.description}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div id="button">
+      <button id="more-news"> <a routerLink="/news" routerLinkActive="active">Get All News</a></button>
+    </div> -->
+  </div>
+</section>

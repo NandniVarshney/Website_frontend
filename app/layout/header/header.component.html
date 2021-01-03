@@ -1,0 +1,60 @@
+<article class="header">
+  <a href=""><img class="mainLogo" src="assets/image/ColoredLogoFinal.png" alt="Logo"></a>
+  <nav class="navHeader">
+      <a class="solbtn" onmouseover="this.style.fontWeight='800'" onmouseout="this.style.fontWeight='normal'"
+        (click)="solutionopener()">Solutions<i class="material-icons" id="sol-icon">expand_more</i></a>
+      <div id="container" class="solbox" style="display: none;">
+        <div class="box" *ngFor="let item of solution">
+          <img class="iconLogo"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQT1VYUiMOHlyAZ5Vre296gpPHkhb2PtvjtEA&usqp=CAU"
+            alt="image">
+          <div class="content">
+            <span class="itemName">{{item.name}}</span>
+            <p class="itemDescription">{{item.description}}<a href="{{item.link}}" class="knowMore">Know More</a></p>
+          </div>
+        </div>
+      </div>
+    <a class="navLinks" href="" onmouseover="this.style.fontWeight='800'"
+      onmouseout="this.style.fontWeight='normal'">Product & Services</a>
+    <a class="navLinks" href="" onmouseover="this.style.fontWeight='800'"
+      onmouseout="this.style.fontWeight='normal'">Network Coverage</a>
+    <a class="navLinks" href="" onmouseover="this.style.fontWeight='800'"
+      onmouseout="this.style.fontWeight='normal'">Iot Marketplace </a>
+    <button class="loginBtn" (click)="loginopener()">Login<i class="material-icons" id="dp">arrow_drop_down</i></button>
+    <div class="containerx" style = "display: none;">
+      <div class="box" *ngFor="let item of login">
+        <img class="iconLogo" src="{{item.image}}" alt="image">
+        <a class="itemLgName" href="{{item.url}}">{{item.title}}</a>
+      </div>
+    </div>
+  </nav>
+  <div class="hamburger-icon" id="ham-icon" >☰</div>
+  <div id="hamburger-accordion" style="display: none">
+    <div id = "hambox1">
+      <input type="checkbox" name="example_accordion" id="section1" class="accordion-input">
+      <label for="section1" class="accordion-label" (click)="dropdownfunc()"><strong>Solutions</strong>
+        <div class="drop-icon"><i class="fa fa-angle-down" id="d-icon"></i></div>
+      </label>
+      <div class="accordion-content" id="acco-content">
+        <a href="" class="solution-links"><strong>Smart Bins</strong></a>
+        <a href="" class="solution-links"><strong>Smart Cold Chain</strong></a>
+        <a href="" class="solution-links"><strong>Smart Lighting</strong></a>
+        <a href="" class="solution-links"><strong>Smart Parking</strong></a>
+        <a href="" class="solution-links"><strong>Smart Tracking</strong></a>
+      </div>
+    </div>
+    <a class="accordion-links" href=""><strong>Product & Services</strong></a>
+    <a class="accordion-links" href=""><strong>Network Coverage</strong></a>
+    <a class="accordion-links" href=""><strong>IoT Marketplace</strong></a>
+    <div class="login-block" id = "hambox2">
+      <input type="checkbox" name="example_accordion" id="section2" class="login-input">
+      <label for="section2" class="accordion-label" (click)="caretdown()" id="login-value">Login
+        <div class="l-icon"><i class='fa fa-caret-down' id="caret-icon"></i></div>
+      </label>
+      <div class="lg-content" id="lg-box">
+        <a href="" class="login-links"><strong>Ginger</strong></a>
+        <a href="" class="login-links"><strong>Network Portal</strong></a>
+      </div>
+    </div>
+  </div>
+</article>
